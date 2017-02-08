@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers"
+	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers">
+  <simpleType name="Index">
+    <restriction base="ID">
+      <pattern value="(\\d){5}"/>
+    </restriction>
+  </simpleType>
+  
+  <complexType name="PeriodicalType">
+
+    <attribute name="index" type="tns:Index" use="required"/>
+
+    <attribute name="period" use="optional">
+      <simpleType>
+	<restriction base="string">
+	  <enumeration value="daily"/>
+	  <enumeration value="weekly"/>
+	  <enumeration value="monthly"/>
+	</restriction>
+      </simpleType>
+    </attribute>
+	    
+    <sequence>
+      <element name="title" type="string"/>
+      <element name="volume" type="integer"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="Newspaper">
+    <complexContent>
+      <extension base="tns:PeriodicalType">
+	<element name="colored" type="boolean"/>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <complexType name="Magazine">
+    <complexContent>
+      <extension base="tns:PeriodicalType">
+	<element name="metallic" type="boolean"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  
+  <element name="periodical" type="tns:PeriodicalType" abstract="true"/>
+  <element name="newspaper" type="tns:Newspaper" substitutionGroup="tns:periodical"/>
+  <element name="magazine" type="tns:Magazine" substitutionGroup="tns:periodical"/>
+
+  <element name="papers">
+    <complexType>
+      <sequence>
+	<element ref="tns:periodical" maxOccurs="unbounded"/>
+      </sequence>
+    </complexType>
+  </element>
+  
+</schema>

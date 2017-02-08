@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers"
+	xsi:schemaLocation="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers papers.xsd">
+
+  <newspaper index="34523" period="daily">
+    <title>New York Times</title>
+    <volume>48</volume>
+    <colored>true</colored>
+  </newspaper>
+  <newspaper index="45234" period="daily">
+    <title>Sun Times</title>
+    <volume>16</volume>
+    <colored>true</colored>
+  </newspaper>
+  <newspaper index="33423" period="weekly">
+    <title>Harvard gazette</title>
+    <volume>12</volume>
+    <colored>false</colored>
+  </newspaper>
+  <newspaper index="23523" period="weekly">
+    <title>Baltimore Times</title>
+    <volume>48</volume>
+    <colored>true</colored>
+  </newspaper>
+  <newspaper index="32343" period="weekly">
+    <title>The Daily Mash</title>
+    <volume>36</volume>
+    <colored>true</colored>
+  </newspaper>
+  <newspaper index="12323" period="weekly">
+    <title>Kentucky Tribune</title>
+    <volume>48</volume>
+    <colored>true</colored>
+  </newspaper>
+  <newspaper index="23423" period="monthly">
+    <title>Texas View</title>
+    <volume>48</volume>
+    <colored>false</colored>
+  </newspaper>
+  <newspaper index="63546" period="daily">
+    <title>Denver Daily</title>
+    <volume>12</volume>
+    <colored>false</colored>
+  </newspaper>
+  <!--
+  <magazine index="54363">
+    <title>Cosmopolitan</title>
+    <volume>94</volume>
+    <metallic>true</metallic>
+  </magazine>
+  <magazine index="23453">
+    <title>Hollywood Reporter</title>
+    <volume>86</volume>
+    <metallic>true</metallic>
+  </magazine>
+  <magazine index="67453" period="quarterly">
+    <title>US Literary</title>
+    <volume>128</volume>
+    <metallic>false</metallic>
+  </magazine>
+  <magazine index="08543">
+    <title>Art in America</title>
+    <volume>94</volume>
+    <metallic>true</metallic>
+  </magazine>
+  <magazine index="23442" period="monthly">
+    <title>National Geographic</title>
+    <volume>140</volume>
+    <metallic>true</metallic>
+  </magazine>
+  <magazine index="28453">
+    <title>US History Magazine</title>
+    <volume>92</volume>
+    <metallic>false</metallic>
+  </magazine>
+  <magazine index="98453" period="weekly">
+    <title>Cars</title>
+    <volume>64</volume>
+    <metallic>true</metallic>
+  </magazine>
+  <magazine index="23753" period="monthly">
+    <title>Men's Health</title>
+    <volume>94</volume>
+    <metallic>true</metallic>
+    </magazine>
+  -->
+</papers>
+  
