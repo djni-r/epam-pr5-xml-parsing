@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers"
+	targetNamespace="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/periodicals"
 	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers">
-  <simpleType name="Index">
+  <simpleType name="ISSN">
     <restriction base="ID">
-      <pattern value="(\\d){5}"/>
+      <pattern value="(\\d){4}-(\\d){3}[\\dxX]"/>
     </restriction>
   </simpleType>
   
-  <complexType name="PeriodicalType">
+  <complexType name="Periodical">
 
-    <attribute name="index" type="tns:Index" use="required"/>
+    <attribute name="issn" type="tns:ISSN" use="required"/>
 
     <attribute name="period" use="optional">
       <simpleType>
@@ -18,6 +18,7 @@
 	  <enumeration value="daily"/>
 	  <enumeration value="weekly"/>
 	  <enumeration value="monthly"/>
+	  <enumeration value="quarterly"/>
 	</restriction>
       </simpleType>
     </attribute>
@@ -30,7 +31,7 @@
 
   <complexType name="Newspaper">
     <complexContent>
-      <extension base="tns:PeriodicalType">
+      <extension base="tns:Periodical">
 	<element name="colored" type="boolean"/>
       </extension>
     </complexContent>
@@ -38,17 +39,17 @@
 
   <complexType name="Magazine">
     <complexContent>
-      <extension base="tns:PeriodicalType">
-	<element name="metallic" type="boolean"/>
+      <extension base="tns:Periodical">
+	<element name="glossy" type="boolean"/>
       </extension>
     </complexContent>
   </complexType>
   
-  <element name="periodical" type="tns:PeriodicalType" abstract="true"/>
+  <element name="periodical" type="tns:Periodical" abstract="true"/>
   <element name="newspaper" type="tns:Newspaper" substitutionGroup="tns:periodical"/>
   <element name="magazine" type="tns:Magazine" substitutionGroup="tns:periodical"/>
 
-  <element name="papers">
+  <element name="periodicals">
     <complexType>
       <sequence>
 	<element ref="tns:periodical" maxOccurs="unbounded"/>

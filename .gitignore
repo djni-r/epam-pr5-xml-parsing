@@ -1,4 +1,6 @@
 bin
 bin/*
-files/papers/#*#
-files/papers/*~
+files/periodicals/#*#
+files/periodicals/*~
+logs/*
+logs

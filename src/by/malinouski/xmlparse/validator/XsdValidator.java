@@ -24,7 +24,7 @@ import org.xml.sax.SAXException;
  */
 public class XsdValidator {
 
-    static final Logger LOGGER = LogManager.getLogger(XsdValidator.class);
+    static final Logger logger = LogManager.getLogger(XsdValidator.class);
     private SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
     
     public boolean validate(String fileName, String schemaName) {
@@ -36,13 +36,13 @@ public class XsdValidator {
             validator.validate(new StreamSource(fileName));
             return true;
         } catch (SAXException e) {
-            LOGGER.error("Not valid: " + e.getMessage());
+            logger.error("Not valid: " + e.getMessage());
             return false;
         } catch (IOException e) {
-            LOGGER.error("Not valid: " + e.getMessage());
+            logger.error("Not valid: " + e.getMessage());
             return false;
         } catch (IllegalArgumentException e) {
-            LOGGER.error("Cannot validate: " + e.getMessage());
+            logger.error("Cannot validate: " + e.getMessage());
             return false;
         }
     }

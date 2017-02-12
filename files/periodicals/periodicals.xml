@@ -1,89 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<papers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers"
-	xsi:schemaLocation="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/papers papers.xsd">
+<periodicals xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/periodicals"
+	xsi:schemaLocation="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/periodicals periodicals.xsd">
 
-  <newspaper index="34523" period="daily">
+  <newspaper issn="3423-543X" period="daily">
     <title>New York Times</title>
     <volume>48</volume>
     <colored>true</colored>
   </newspaper>
-  <newspaper index="45234" period="daily">
+  <newspaper issn="3443-543x" period="daily">
     <title>Sun Times</title>
     <volume>16</volume>
     <colored>true</colored>
   </newspaper>
-  <newspaper index="33423" period="weekly">
+  <newspaper issn="4323-3230" period="weekly">
     <title>Harvard gazette</title>
     <volume>12</volume>
     <colored>false</colored>
   </newspaper>
-  <newspaper index="23523" period="weekly">
+  <newspaper issn="3523-3420" period="weekly">
     <title>Baltimore Times</title>
     <volume>48</volume>
     <colored>true</colored>
   </newspaper>
-  <newspaper index="32343" period="weekly">
+  <newspaper issn="2343-342X" period="weekly">
     <title>The Daily Mash</title>
     <volume>36</volume>
     <colored>true</colored>
   </newspaper>
-  <newspaper index="12323" period="weekly">
+  <newspaper issn="1232-3430" period="weekly">
     <title>Kentucky Tribune</title>
     <volume>48</volume>
     <colored>true</colored>
   </newspaper>
-  <newspaper index="23423" period="monthly">
+  <newspaper issn="2342-443X" period="monthly">
     <title>Texas View</title>
     <volume>48</volume>
     <colored>false</colored>
   </newspaper>
-  <newspaper index="63546" period="daily">
+  <newspaper issn="6354-5430" period="daily">
     <title>Denver Daily</title>
     <volume>12</volume>
     <colored>false</colored>
   </newspaper>
-  <!--
-  <magazine index="54363">
+  <magazine issn="5436-4430">
     <title>Cosmopolitan</title>
     <volume>94</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
   </magazine>
-  <magazine index="23453">
+  <magazine issn="2345-432x">
     <title>Hollywood Reporter</title>
     <volume>86</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
   </magazine>
-  <magazine index="67453" period="quarterly">
+  <magazine issn="6745-343x" period="quarterly">
     <title>US Literary</title>
     <volume>128</volume>
-    <metallic>false</metallic>
+    <glossy>false</glossy>
   </magazine>
-  <magazine index="08543">
+  <magazine issn="0854-3320">
     <title>Art in America</title>
     <volume>94</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
   </magazine>
-  <magazine index="23442" period="monthly">
+  <magazine issn="2342-342X" period="monthly">
     <title>National Geographic</title>
     <volume>140</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
   </magazine>
-  <magazine index="28453">
+  <magazine issn="3432-5430">
     <title>US History Magazine</title>
     <volume>92</volume>
-    <metallic>false</metallic>
+    <glossy>false</glossy>
   </magazine>
-  <magazine index="98453" period="weekly">
+  <magazine issn="2343-1220" period="weekly">
     <title>Cars</title>
     <volume>64</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
   </magazine>
-  <magazine index="23753" period="monthly">
+  <magazine issn="2345-543X" period="monthly">
     <title>Men's Health</title>
     <volume>94</volume>
-    <metallic>true</metallic>
+    <glossy>true</glossy>
     </magazine>
-  -->
-</papers>
+</periodicals>
   

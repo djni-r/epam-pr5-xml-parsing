@@ -1,21 +1,22 @@
-package by.malinouski.xmlparse.papersenum;
+package by.malinouski.xmlparse.periodicenum;
 
-public enum NewspaperEnum {
-    PAPERS("papers"),
+public enum PeriodicalEnum {
+    PERIODICALS("periodical"),
     INDEX("index"),
     PERIOD("period"),
-    NEWSPAPER("newspaper"),
     TITLE("title"),
     VOLUME("volume"),
-    COLORED("colored");
+    COLORED("colored"),
+    GLOSSY("glossy");
     
     private String value;
     
-    private NewspaperEnum(String value) {
+    private PeriodicalEnum(String value) {
         this.value = value;
     }
     
     public String getValue() {
         return value;
     }
+    
 }
