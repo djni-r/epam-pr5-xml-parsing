@@ -22,6 +22,13 @@ public abstract class Periodical {
     
     public Periodical() {
         period = Period.UNSPECIFIED;
+        issn = "0000-0000";
+        title = "no title";
+        volume = 0;
+    }
+    
+    public static Periodical getEmptyPeriodical() {
+        return new Periodical() {};
     }
     
     public String getIssn() {
@@ -57,8 +64,10 @@ public abstract class Periodical {
     }
     
     public boolean equalsPeriodical(Periodical other) {
-        if (issn == other.issn && period == other.period && 
-                title == other.title && volume == other.volume) {
+        /* for some reason my Strings don't get interned, 
+         * so I had to check on equals to pass the tests */
+        if (issn.equals(other.issn) && period == other.period && 
+                title.equals(other.title) && volume == other.volume) {
             return true;
         } else {
             return false;

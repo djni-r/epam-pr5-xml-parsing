@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<periodicals xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="https://www.github.com/makar-y/epam-pr5-xml-parsing.git/files/periodicals"
+	xsi:schemaLocation="https://www.github.com/makar-y/epam-pr/files/periodicals periodicals.xsd">
+
+  <newspaper issn="3423-543X" period="daily">
+    <title>New York Times</title>
+    <volume>48</volume>
+    <colored>true</colored>
+  </newspaper>
+
+</periodicals>

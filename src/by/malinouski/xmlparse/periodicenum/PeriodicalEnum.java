@@ -2,11 +2,13 @@ package by.malinouski.xmlparse.periodicenum;
 
 public enum PeriodicalEnum {
     PERIODICALS("periodical"),
-    INDEX("index"),
+    ISSN("issn"),
     PERIOD("period"),
     TITLE("title"),
     VOLUME("volume"),
+    NEWSPAPER("newspaper"),
     COLORED("colored"),
+    MAGAZINE("magazine"),
     GLOSSY("glossy");
     
     private String value;

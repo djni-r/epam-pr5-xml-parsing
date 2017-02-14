@@ -18,6 +18,9 @@ import by.malinouski.xmlparse.handler.PeriodicalHandler;
 import by.malinouski.xmlparse.periodic.Newspaper;
 import by.malinouski.xmlparse.periodic.Periodical;
 
+/*
+ * Based on "Java Programming Methods" (Blinou, Ramanchyk) 2013
+ */
 public class PeriodicalsSAXBuilder {
     static final Logger logger = LogManager.getLogger(PeriodicalsSAXBuilder.class); 
     private Set<Periodical> periodicals;
